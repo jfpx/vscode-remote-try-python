@@ -8,10 +8,10 @@
 	"settings": { 
 		"terminal.integrated.shell.linux": "/bin/bash",
 		"bracketPairColorizer.forceIterationColorCycle": true,
-		"python.pythonPath": "/usr/bin/python3.7",
+		"python.pythonPath": "/usr/local/bin/python",
 		"python.linting.enabled": true,
 		"python.linting.pylintEnabled": true,
-		"python.linting.pylintPath": "/usr/bin/pylint3"
+		"python.linting.pylintPath": "/usr/local/bin/pylint"
 	},
 
 	// Use 'appPort' to create a container with published ports. If the port isn't working, be sure
