@@ -24,12 +24,12 @@
         // when open repo directly in remote container only, following 2 settings are ignored
 	//"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
 	//"workspaceFolder": "/workspaces",
-	
+
 	"mounts": [
-	    "source=/mnt,target=/mnt,type=bind,consistency=cached",
-            "source=python-extensions-volume,target=/home/vscode/.vscode-server/extensions,type=volume"
+		"source=/mnt,target=/mnt,type=bind,consistency=cached",
+		"source=python-extensions-volume,target=/home/vscode/.vscode-server/extensions,type=volume"
 	],
-	
+
 	// Install flask and any other dependencies
 	"postCreateCommand": "sudo pip install -r requirements.txt",
 
@@ -45,6 +45,6 @@
 		"eamodio.gitlens",
 		"vscode-icons-team.vscode-icons",
 		"sdras.night-owl",
-		"johnpapa.vscode-peacock"		
+		"johnpapa.vscode-peacock"
 	]
 }
