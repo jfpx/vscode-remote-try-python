@@ -7,6 +7,7 @@
 	// You can edit these settings after create using File > Preferences > Settings > Remote.
 	"settings": { 
 		"terminal.integrated.shell.linux": "/bin/bash",
+		"workbench.colorTheme": "Night Owl Light (No Italics)",
 		"bracketPairColorizer.forceIterationColorCycle": true,
 		"python.pythonPath": "/usr/local/bin/python",
 		"python.linting.enabled": true,
