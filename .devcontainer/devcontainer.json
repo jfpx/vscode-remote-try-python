@@ -1,5 +1,5 @@
 {
-	"name": "Python 3",
+	"name": "Python 3.7",
 	"context": "..",
 	"dockerFile": "Dockerfile",
 
@@ -7,10 +7,10 @@
 	// You can edit these settings after create using File > Preferences > Settings > Remote.
 	"settings": { 
 		"terminal.integrated.shell.linux": "/bin/bash",
-		"python.pythonPath": "/usr/local/bin/python",
+		"python.pythonPath": "/usr/bin/python3.7",
 		"python.linting.enabled": true,
 		"python.linting.pylintEnabled": true,
-		"python.linting.pylintPath": "/usr/local/bin/pylint"
+		"python.linting.pylintPath": "/usr/bin/pylint3"
 	},
 
 	// Use 'appPort' to create a container with published ports. If the port isn't working, be sure
@@ -21,10 +21,18 @@
 	"postCreateCommand": "sudo pip install -r requirements.txt",
 
 	// Comment out next line to run as root
-	"remoteUser": "vscode",
+	//"remoteUser": "vscode",
 
 	// Add the IDs of extensions you want installed when the container is created in the array below.
 	"extensions": [
-		"ms-python.python"
+		"ms-python.python",
+		"shardulm94.trailing-spaces",
+		"njpwerner.autodocstring",
+		"formulahendry.code-runner",
+		"redhat.vscode-yaml",
+		"ms-python.anaconda",
+		"aaron-bond.better-comments",
+		"eamodio.gitlens",
+		"vscode-icons-team.vscode-icons"
 	]
 }
