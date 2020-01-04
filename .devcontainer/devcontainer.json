@@ -41,11 +41,11 @@
 		"njpwerner.autodocstring",
 		"formulahendry.code-runner",
 		"redhat.vscode-yaml",
-		"ms-python.anaconda",
 		"aaron-bond.better-comments",
 		"eamodio.gitlens",
 		"vscode-icons-team.vscode-icons",
 		"sdras.night-owl",
-		"johnpapa.vscode-peacock"
+		"johnpapa.vscode-peacock",
+		"ms-python.anaconda-extension-pack"
 	]
 }
