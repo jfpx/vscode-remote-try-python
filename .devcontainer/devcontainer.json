@@ -16,7 +16,7 @@
 
 	// Use 'appPort' to create a container with published ports. If the port isn't working, be sure
 	// your server accepts connections from all interfaces (0.0.0.0 or '*'), not just localhost.
-	"appPort": [ 9000 ],
+	//"appPort": [ 9000 ], no appport set here, otherwise this repo can only open once
 
 	// Comment out next line to run as root
 	"remoteUser": "vscode",
