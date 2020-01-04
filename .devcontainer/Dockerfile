@@ -51,9 +51,10 @@ RUN apt-get update \
 RUN mkdir -p /home/$USERNAME/.vscode-server \
     && mkdir -p /home/$USERNAME/.vscode-server/extensions \
     && chown -R $USERNAME \
+        /workspaces \
         /home/$USERNAME/.vscode-server \
         /home/$USERNAME/.vscode-server/extensions
-        
+
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog
 
