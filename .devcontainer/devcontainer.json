@@ -21,12 +21,15 @@
 	// Comment out next line to run as root
 	"remoteUser": "vscode",
 
+        // when open repo directly in remote container only, following 2 settings are ignored
 	//"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
-	"workspaceFolder": "/workspaces",
+	//"workspaceFolder": "/workspaces",
+	
 	"mounts": [
 	    "source=/mnt,target=/mnt,type=bind,consistency=cached",
             "source=python-extensions-volume,target=/home/vscode/.vscode-server/extensions,type=volume"
 	],
+	
 	// Install flask and any other dependencies
 	"postCreateCommand": "sudo pip install -r requirements.txt",
 
