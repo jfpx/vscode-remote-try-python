@@ -21,13 +21,14 @@
 	// Comment out next line to run as root
 	"remoteUser": "vscode",
 
-	"workspaceMount": "source=/mnt,target=/mnt,type=bind,consistency=cached",
+	//"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
 	"workspaceFolder": "/workspaces",
 	"mounts": [
+	    "source=/mnt,target=/mnt,type=bind,consistency=cached",
             "source=python-extensions-volume,target=/home/vscode/.vscode-server/extensions,type=volume"
 	],
 	// Install flask and any other dependencies
-	"postCreateCommand": "sudo pip install -r requirements.txt && sudo chown vscode repo",
+	"postCreateCommand": "sudo pip install -r requirements.txt",
 
 	// Add the IDs of extensions you want installed when the container is created in the array below.
 	"extensions": [
