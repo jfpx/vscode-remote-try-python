@@ -23,7 +23,7 @@
 	"remoteUser": "vscode",
 
         // when open repo directly in remote container only, following 2 settings are ignored
-	//"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+	//"workspaceMount": "source=${localWorkspaceFolder},target=/workspaces,type=bind,consistency=cached",
 	//"workspaceFolder": "/workspaces",
 
 	"mounts": [
@@ -32,7 +32,7 @@
 	],
 
 	// Install flask and any other dependencies
-	"postCreateCommand": "sudo pip install -r requirements.txt",
+	"postCreateCommand": "sudo pip install -r requirements.txt && sudo chown -R vscode /workspaces",
 
 	// Add the IDs of extensions you want installed when the container is created in the array below.
 	"extensions": [
